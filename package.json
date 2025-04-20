@@ -25,6 +25,8 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/morgan": "^1.9.9",
+    "@types/node": "^22.14.1",
+    "@types/qs": "^6.9.18",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^10.1.1",

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: todo-list-app
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: mongodb+srv://jonaslacandola07:${DATABASE_PASSWORD}@cluster0.uwndrmh.mongodb.net/toDoList?retryWrites=true&w=majority&appName=cluster0
+      - key: DATABASE_PASSWORD
+        value: H8rI0KcIkJkH0Bft
+    autoDeploy: true
